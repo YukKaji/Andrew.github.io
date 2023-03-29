@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: "Arial", Courier, monospace;
+    color: #000000;
+    padding: 0;
+}
+#conteiner{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: darkcyan;
+}
+#head{
+    background-color: gray;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 7vh;
+}
+#center1{
+    text-align: center;
+    background-color: aquamarine;
+    height: 95vh;
+}
+#center2{
+    text-align: center;
+    background-color: aliceblue;
+    height: 60vh;
+}
+#center3{
+    text-align: center;
+    background-color: darkmagenta;
+    height: 60vh;
+}
+#center4{
+    text-align: center;
+    background-color: ghostwhite;
+    height: 60vh;
+}
+#foot{
+    background-color: darkgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 5vh;
+    text-align: center;
+}
+.clear{
+    clear: both;
+}
