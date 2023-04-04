@@ -5,14 +5,15 @@
         <title>Андрей</title>
         <link href="StyleCSS.css" rel="stylesheet" type="text/css" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script src="jscript.js"></script>
+        
     </head>
     <body link="black" alink="grey" vlink="black">
         <header>
             <div id="head">
                 <h3 id="headhref"><a href="#center1">Главная </a></h3>
-                <h3 id="headhref"><a href="#center2">Портфолио </a></h3>
-                <h3 id="headhref"><a href="#center3">Связь </a></h3>
+                <h3 id="headhref"><a href="#about">Обо_мне </a></h3>
+                <h3 id="headhref"><a href="#portfolio">Портфолио </a></h3>
+                <h3 id="headhref"><a href="#contact">Связь </a></h3>
             </div>
         </header>
         <div id="conteiner">
@@ -24,11 +25,46 @@
                 </div>
             </div>
 
-            <div id="center2"><a name="center2"></a>
-                <h2>Портфолио</h2>
+            <div id="about"><a name="about"></a>
+                <h2>Обо мне</h2>
+                <div id="about_text">
+                    <p>Я нечто делающее что-то <br>
+                    могу все и ничего одновременно</p>
+                    <p>Мои скилы:</p>
+                    <ul>
+                        <li>HTML<br>
+                            <!-- <progress value="70" max="100"></progress> -->
+                        </li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>C#</li>
+                        <li>Blender</li>
+                    </ul>
+                </div>
             </div>
 
-            <div id="center3"><a name="center3"></a>
+            <div id="portfolio"><a name="portfolio"></a>
+
+                <h2>Портфолио</h2>
+
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                      <img src="./pics/dkn.png">
+                      <img src="./pics/logo.png">
+                      <img src="./pics/logoWhite.png">
+                      <img src="./pics/Moment1800.png">
+                      <img src="./pics/nightNice.png">
+                      <img src="./pics/omg.png">
+                      <img src="./pics/tightStreetTest.png">
+                      <img src="./pics/Yon.png">
+                    </div>
+                    <button class="carousel-button carousel-button-prev">&#8249;</button>
+                    <button class="carousel-button carousel-button-next">&#8250;</button>
+                </div>
+            </div>
+
+            <div id="contact"><a name="contact"></a>
                 <h2>Связь со мной</h2>
             </div>
 
@@ -37,5 +73,6 @@
             </div>
 
         </div>
+        <script src="jscript.js"></script>
     </body>
 </html>

@@ -6,14 +6,22 @@
 a{
     text-decoration: none;
 }
+p{
+    text-indent: 25px;
+    margin-bottom: 20px;
+}
+li{
+    padding-bottom: 20px;
+}
 header{
     display: block;
     position: fixed;
     width: 100vw;
     background-color: rgb(245, 245, 245);
+    z-index: 3;
 }
 body{
-    font-family: "Arial", Courier, monospace;
+    font-family: "Andale mono", monospace;
     color: #000000;
     padding: 0;
 }
@@ -34,27 +42,39 @@ body{
 }
 #center1{
     background-color: lightgray;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('nona.png') center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('./pics/nona.png') center;
     background-size: cover;
     height: 100vh;
 }
 #center1text{
-    margin-left: 10vw;
+    margin-left: 8vw;
     margin-right: 25vw;
     text-align: left;
     padding-top: 40vh;
     color: white;
 }
-#center2{
-    text-align: center;
-    background-color: whitesmoke;
-    height: 60vh;
-    padding-top: 3vh;
-}
-#center3{
+#about{
     text-align: center;
     background-color: lightgray;
-    height: 60vh;
+    min-height: 60vh;
+    padding-top: 3vh;
+}
+#about_text{
+    text-align: left;
+    margin-left: 8vw;
+    margin-top: 3vh;
+    font-size: 15pt;
+}
+#portfolio{
+    text-align: center;
+    background-color: whitesmoke;
+    min-height: 60vh;
+    padding-top: 3vh;
+}
+#contact{
+    text-align: center;
+    background-color: lightgray;
+    min-height: 60vh;
     padding-top: 3vh;
 }
 #foot{
@@ -64,6 +84,46 @@ body{
     height: 5vh;
     text-align: center;
 }
+
+/*corousel CSS*/
+
 .clear{
     clear: both;
 }
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 600px;
+    overflow: hidden;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+.carousel-track img {
+    width: 100%;
+    height: auto;
+    object-fit: scale-down;
+}
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+.carousel-button-prev {
+    left: 0;
+}
+.carousel-button-next {
+    right: 0;
+}
+
+/*lines*/
+
