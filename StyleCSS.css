@@ -17,7 +17,6 @@ header{
     display: block;
     position: fixed;
     width: 100vw;
-    background-color: rgb(245, 245, 245);
     z-index: 3;
 }
 body{
@@ -25,21 +24,45 @@ body{
     color: #000000;
     padding: 0;
 }
-#headhref{
-    display: inline;
-    word-spacing: 50px;
-}
 #conteiner{
     max-width: 100vw;
     min-height: 100vh;
     background-color: lightgray;
 }
+
+/*head*/
+
 #head{
     text-align: center;
     height: 40px;
     width: 100%;
     padding-top: 20px;
+    background-color: rgb(245, 245, 245);
 }
+#headhref{
+    display: inline;
+    word-spacing: 50px;
+    text-shadow: 
+    -0   -1px 1px rgb(245, 245, 245),
+    0   -1px 1px rgb(245, 245, 245),
+   -0    1px 1px rgb(245, 245, 245),
+    0    1px 1px rgb(245, 245, 245),
+   -1px -0   1px rgb(245, 245, 245),
+    1px -0   1px rgb(245, 245, 245),
+   -1px  0   1px rgb(245, 245, 245),
+    1px  0   1px rgb(245, 245, 245),
+   -1px -1px 1px rgb(245, 245, 245),
+    1px -1px 1px rgb(245, 245, 245),
+   -1px  1px 1px rgb(245, 245, 245),
+    1px  1px 1px rgb(245, 245, 245),
+   -1px -1px 1px rgb(245, 245, 245),
+    1px -1px 1px rgb(245, 245, 245),
+   -1px  1px 1px rgb(245, 245, 245),
+    1px  1px 1px rgb(245, 245, 245);
+}
+
+/*main*/
+
 #center1{
     background-color: lightgray;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('./pics/nona.png') center;
@@ -53,24 +76,63 @@ body{
     padding-top: 40vh;
     color: white;
 }
+
+/*about*/
+
 #about{
+    position: relative;
     text-align: center;
     background-color: lightgray;
-    min-height: 60vh;
+    min-height: 30vh;
     padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 #about_text{
     text-align: left;
-    margin-left: 8vw;
+    margin-left: 15vw;
     margin-top: 3vh;
     font-size: 15pt;
 }
+#grid-skills{
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    word-wrap: break-word;
+}
+#grid-all{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+#vertline {
+    width: 2px;
+    height: 50px;
+    background-color: grey;
+    position: absolute;
+    left: 50%;
+    margin-top: 1%;
+}
+#about_img{
+    position: relative;
+    top: 7vh;
+    object-fit: scale-down;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 2px 1px gray;
+}
+
+/*portfolio*/
+
 #portfolio{
     text-align: center;
     background-color: whitesmoke;
     min-height: 60vh;
     padding-top: 3vh;
 }
+
+/*contact*/
+
 #contact{
     text-align: center;
     background-color: lightgray;
@@ -127,3 +189,44 @@ body{
 
 /*lines*/
 
+#myProgress {
+    width: 20vw;
+    background-color: grey;
+    border-radius: 25px;
+}
+#HTML {
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#CSS{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#JavaScript{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#jQuery{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#C{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#Blender{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}

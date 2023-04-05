@@ -1,6 +1,6 @@
  'use strict';
 
- //smeeth movement
+ //smooth movement
 
  $(document).ready(function(){
     $("#head").on("click","a", function (event) {
@@ -57,3 +57,33 @@ nextButton.addEventListener('click', () => {
 });
 
 updateButtons();
+
+// lines
+
+$(window).scroll(function() {
+    $('#HTML').each(function() {
+        let elementPosition = $(this).offset().top;
+        let elementHeight = $(this).outerHeight();
+        let windowHeight = $(window).height();
+        let scrollPosition = $(window).scrollTop();
+        if (scrollPosition > (elementPosition - windowHeight + elementHeight)) {
+            $("#HTML").animate({width: "89%"},1500);
+            $("#CSS").animate({width: "70%"},1500);
+            $("#JavaScript").animate({width: "69%"},1500);
+            $("#jQuery").animate({width: "69%"},1500);
+            $("#C").animate({width: "40%"},1500);
+            $("#Blender").animate({width: "100%"},1500);
+        }
+    });
+});
+
+// header transperent
+
+$('#head').fadeOut();
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 10) {
+        $('#head').fadeIn('fast'); 
+    } else {
+        $('#head').fadeOut('fast');
+    }
+});
