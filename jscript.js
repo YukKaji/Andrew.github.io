@@ -67,9 +67,9 @@ $(window).scroll(function() {
         let windowHeight = $(window).height();
         let scrollPosition = $(window).scrollTop();
         if (scrollPosition > (elementPosition - windowHeight + elementHeight)) {
-            $("#HTML").animate({width: "89%"},1500);
-            $("#CSS").animate({width: "70%"},1500);
-            $("#JavaScript").animate({width: "69%"},1500);
+            $("#HTML").animate({width: "100%"},1500);
+            $("#CSS").animate({width: "100%"},1500);
+            $("#JavaScript").animate({width: "100%"},1500);
             $("#jQuery").animate({width: "69%"},1500);
             $("#C").animate({width: "40%"},1500);
             $("#Blender").animate({width: "100%"},1500);

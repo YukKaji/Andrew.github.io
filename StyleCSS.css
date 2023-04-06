@@ -101,7 +101,7 @@ body{
 #grid-all{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     grid-template-rows: auto;
     grid-gap: 20px;
 }
@@ -116,7 +116,6 @@ body{
 #about_img{
     position: relative;
     top: 7vh;
-    object-fit: scale-down;
     max-width: 100%;
     height: auto;
     box-shadow: 4px 4px 2px 1px gray;
