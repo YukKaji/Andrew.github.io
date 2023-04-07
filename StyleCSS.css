@@ -129,6 +129,74 @@ body{
     min-height: 60vh;
     padding-top: 3vh;
 }
+.grid-con{
+    display: grid;
+    row-gap: 40px;
+    column-gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: 1fr 15vw 1fr;
+    grid-template-rows: 10px 1fr 10px 1fr 10px;
+    grid-template-areas: 
+    "A A A"
+    "B C C"
+    "D D D"
+    "E E F"
+    "G G G";
+}
+.line_1{
+    grid-area: A;
+    align-self: center;
+    justify-self: center;
+    width: 80vw;
+    height: 2px;
+    background-color: grey;
+}
+.box_B{
+    grid-area: B;
+}
+.box_C{
+    grid-area: C;
+}
+.line_2{
+    grid-area: D;
+    align-self: center;
+    justify-self: center;
+    width: 80vw;
+    height: 2px;
+    background-color: grey;
+}
+.box_E{
+    grid-area: E;
+}
+.box_F{
+    grid-area: F;
+}
+.line_3{
+    grid-area: G;
+    align-self: center;
+    justify-self: center;
+    width: 80vw;
+    height: 2px;
+    background-color: grey;
+}
+.left_img{
+    justify-self: end;
+    align-self: center;
+}
+.right_img{
+    justify-self: start;
+    align-self: center;
+}
+#port_img{
+    max-width: 35vw;
+    height: auto;
+    box-shadow: 4px 4px 2px 1px gray;
+}
+#port_meme_img{
+    max-width: 20vw;
+    height: auto;
+}
 
 /*contact*/
 
