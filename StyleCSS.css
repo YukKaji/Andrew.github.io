@@ -302,10 +302,21 @@ body{
     min-height: 60vh;
     padding-top: 3vh;
 }
+#text_contact{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: smaller;
+}
+
+/*footer*/
+
+#img_foot{
+    height: 35px;
+    width: 35px;
+}
 #foot{
     background-color: darkgray;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1vh;
     height: 5vh;
     text-align: center;
 }
