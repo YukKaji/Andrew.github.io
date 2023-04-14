@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
-    <meta charset="UTF-8">
+<html lang="ru">
     <head>
         <title>Андрей</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Сайт-визитка IT-специалиста по различным направлениям">
         <link href="StyleCSS.css" rel="stylesheet" type="text/css" />
     </head>
     <body link="black" alink="grey" vlink="black">
@@ -26,7 +28,7 @@
             <div id="about"><a name="about"></a>
                 <h2>Обо мне</h2>
                 <div id="vertline"></div>
-                <div id="grid-all">
+                <div class="grid-all">
                     <div id="about_text">
                         <p>Я нечто делающее что-то <br>
                         могу все и ничего одновременно</p>
@@ -89,7 +91,7 @@
                         </ul>
                     </div>
                     <div>
-                        <img id="about_img" src="./pics/oyaoya.jpg">
+                        <img id="about_img" src="./pics/oyaoya.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -101,21 +103,21 @@
                     <div class="line_1"></div>
 
                     <div class="left_img box_B">
-                        <img id="meme_pic" src="./pics/meme.gif">
+                        <img id="meme_pic" src="./pics/memeS.gif" alt="">
                     </div>
 
                     <div class="right_img box_C">
-                        <img id="port_img" src="./pics/omgS.png">
+                        <img id="port_img" src="./pics/omgS.png" alt="">
                     </div>
 
                     <div class="line_2"></div>
 
                     <div class="left_img box_E">
-                        <img id="port_img" src="./pics/nightNiceS.png">
+                        <img id="port_img" src="./pics/nightNiceS.png" alt="">
                     </div>
                     
                     <div class="right_img box_F">
-                        <img id="meme_pic" src="./pics/WOW!mem.png">
+                        <img id="meme_pic" src="./pics/WOW!memS.png" alt="">
                     </div>
                     
                     <div class="line_3"></div>
@@ -125,7 +127,7 @@
                 <div class="grid_port">
                     <div class="port_align_left port_box_A">
                         <div class="block_for_text">
-                            <img class="port_pics" src="./pics/tightStreetTestS.png" onclick="zoomIn(this)">
+                            <img class="port_pics" src="./pics/tightStreetTestS.png" alt="Работа в Blender" onclick="zoomIn(this)">
                             <div class="text_port">
                                 Работа в Blender
                             </div>
@@ -134,7 +136,7 @@
 
                     <div class="port_align_center port_box_b">
                         <div class="block_for_text">
-                            <img class="port_pics" src="./pics/nightNiceS.png" onclick="zoomIn(this)">
+                            <img class="port_pics" src="./pics/nightNiceS.png" alt="Работа в Blender" onclick="zoomIn(this)">
                             <div class="text_port">
                                 Работа в Blender
                             </div>
@@ -143,7 +145,7 @@
 
                     <div class="port_align_right port_box_C">
                         <div class="block_for_text">
-                            <img class="port_pics" src="./pics/omgS.png" onclick="zoomIn(this)">
+                            <img class="port_pics" src="./pics/omgS.png" alt="Работа в Blender" onclick="zoomIn(this)">
                             <div class="text_port">
                                 Работа в Blender
                             </div>
@@ -154,7 +156,7 @@
 
                     <div class="port_align_center port_box_f">
                         <div class="block_for_text">
-                            <a href="https://yukkaji.github.io/"><img class="port_pics" src="./pics/site.PNG"></a>
+                            <a href="https://yukkaji.github.io/" aria-label="Этот сайт"><img class="port_pics" src="./pics/siteS.png"></a>
                             <div class="text_port">
                                 Этот сайт
                             </div>
@@ -170,8 +172,8 @@
 
             <div id="foot">
                 <div>
-                    <a href="https://github.com/YukKaji"><img id="img_foot" src="./pics/git.png"></a>
-                    <a href="https://pin.it/2tyggtL"><img id="img_foot" src="./pics/pint.png"></a>
+                    <a href="https://github.com/YukKaji" aria-label="GitHub"><img id="img_foot" src="./pics/git.png"></a>
+                    <a href="https://pin.it/2tyggtL" aria-label="Pinterest"><img id="img_foot" src="./pics/pint.png"></a>
                 </div>
             </div>
 

@@ -81,7 +81,7 @@ body{
     grid-template-columns: 10vw 10vw;
     word-wrap: break-word;
 }
-#grid-all{
+.grid-all{
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, minmax(200px, 1fr));
@@ -102,6 +102,50 @@ body{
     max-width: 100%;
     height: auto;
     box-shadow: 4px 4px 2px 1px gray;
+}
+
+/*lines*/
+
+#myProgress {
+    width: 20vw;
+    background-color: grey;
+    border-radius: 25px;
+}
+#HTML {
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#CSS{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#JavaScript{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#jQuery{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#C{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
+}
+#Blender{
+    width: 1%;
+    height: 8px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 25px;
 }
 
 /*portfolio*/
@@ -313,57 +357,87 @@ body{
 #img_foot{
     height: 35px;
     width: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #foot{
     background-color: darkgray;
     padding-top: 1vh;
+    padding-bottom: 1vh;
     height: 5vh;
     text-align: center;
 }
 .clear{
     clear: both;
 }
-
-/*lines*/
-
-#myProgress {
-    width: 20vw;
-    background-color: grey;
-    border-radius: 25px;
-}
-#HTML {
-    width: 1%;
-    height: 8px;
-    background-color: rgb(255, 196, 0);
-    border-radius: 25px;
-}
-#CSS{
-    width: 1%;
-    height: 8px;
-    background-color: rgb(255, 196, 0);
-    border-radius: 25px;
-}
-#JavaScript{
-    width: 1%;
-    height: 8px;
-    background-color: rgb(255, 196, 0);
-    border-radius: 25px;
-}
-#jQuery{
-    width: 1%;
-    height: 8px;
-    background-color: rgb(255, 196, 0);
-    border-radius: 25px;
-}
-#C{
-    width: 1%;
-    height: 8px;
-    background-color: rgb(255, 196, 0);
-    border-radius: 25px;
-}
-#Blender{
-    width: 1%;
-    height: 8px;
-    background-color: rgb(255, 196, 0);
-    border-radius: 25px;
+@media (max-width: 767px){
+    #headhref{
+        word-spacing: 5px;
+    }
+    /*about*/
+    .grid-all{
+        grid-template-columns: 1fr;
+    }
+    #vertline{
+        opacity: 0;
+    }
+    #myProgress{
+        width: 70vw;
+    }
+    #grid-skills{
+        grid-template-columns: 35vw 35vw;
+    }
+    #about_img{
+        top: 0;
+    }
+    /*portfolio*/
+    .grid_port{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "A"
+        "B"
+        "C"
+        "D"
+        "F";
+    }
+    .port_align_left{
+        justify-self: center;
+    }
+    .port_align_right{
+        justify-self: center;
+    }
+    .port_align_center{
+        justify-self: center;
+    }
+    .port_pics{
+        max-width: 80vw;
+    }
+    .block_for_text{
+        max-width: 80vw;
+    }
+    .grid-con{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "A"
+        "B"
+        "C"
+        "D"
+        "E"
+        "F"
+        "G";
+    }
+    .left_img{
+        justify-self: center;
+    }
+    .right_img{
+        justify-self: center;
+    }
+    #port_img{
+        max-width: 80vw;
+    }
+    #meme_pic{
+        max-width: 50vw;
+    }
 }
