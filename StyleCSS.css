@@ -340,16 +340,30 @@ body{
 
 /*contact*/
 
+.grid-contact{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding-top: 4vh;
+}
 #contact{
     text-align: center;
     background-color: lightgray;
-    min-height: 60vh;
+    min-height: 30vh;
     padding-top: 3vh;
+    padding-bottom: 3vh;
 }
-#text_contact{
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    font-size: smaller;
+#contact_img{
+    max-width: 45%;
+    height: auto;
+    box-shadow: 4px 4px 2px 1px gray;
+}
+#contact_text{
+    text-align: left;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    font-size: 15pt;
 }
 
 /*footer*/
@@ -372,7 +386,7 @@ body{
 }
 @media (max-width: 767px){
     #headhref{
-        word-spacing: 5px;
+        word-spacing: 0px;
     }
     /*about*/
     .grid-all{
@@ -439,5 +453,9 @@ body{
     }
     #meme_pic{
         max-width: 50vw;
+    }
+    /*contact*/
+    .grid-contact{
+        grid-template-columns: 1fr;
     }
 }
