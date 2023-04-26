@@ -3,7 +3,7 @@
  //smooth movement
 
 document.addEventListener("DOMContentLoaded", function() {
-    let links = document.querySelectorAll("#head a");
+    let links = document.querySelectorAll(".head a");
     for (let i = 0; i < links.length; i++) {
         links[i].addEventListener("click", function(event) {
             event.preventDefault();
@@ -47,7 +47,7 @@ window.addEventListener('scroll', function() {
 
 // header transperent
 
-let head = document.querySelector('#head');
+let head = document.querySelector('.head');
 head.style.opacity = '0';
 
 window.addEventListener('scroll', function() {
@@ -59,6 +59,25 @@ window.addEventListener('scroll', function() {
         head.style.transition = 'opacity 0.3s ease-in-out';
     }
 });
+
+// header mobile
+if (window.matchMedia("(max-width: 767px)").matches) {
+    const header = document.querySelector('.head');
+    const htmlToAdd = '<button class="toggle-button"><img src="./pics/menu.png" class="img_head"></button>';
+
+    header.insertAdjacentHTML('afterbegin', htmlToAdd);
+
+    const button = document.querySelector('.toggle-button');
+    const infoBlock = document.querySelector('.list');
+
+    button.addEventListener('click', function() {
+        if (infoBlock.classList.contains('visible')) {
+            infoBlock.classList.remove('visible');
+        } else {
+            infoBlock.classList.add('visible');
+        }
+    });
+}
 
 // pics in portfolio
 

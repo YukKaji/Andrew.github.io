@@ -32,16 +32,16 @@ body{
 
 /*head*/
 
-#head{
+.head{
     text-align: center;
     height: 40px;
     width: 100%;
     padding-top: 20px;
     background-color: rgb(245, 245, 245);
 }
-#headhref{
+.headhref{
     display: inline;
-    word-spacing: 50px;
+    padding: 20px;
 }
 
 /*main*/
@@ -381,12 +381,33 @@ body{
     height: 5vh;
     text-align: center;
 }
-.clear{
-    clear: both;
-}
 @media (max-width: 767px){
-    #headhref{
-        word-spacing: 0px;
+    .toggle-button{
+        display: flex;
+        background-color: transparent;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .list{        
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-out;
+        background-color: whitesmoke;
+    }
+    .list.visible {
+        height: 200px;
+    }
+    .img_head{
+        width: 40px;
+        height: auto;
+    }
+    .head{
+        padding-top: 0px;
+        height: 55px;
+    }
+    .headhref{
+        display: block;
+        padding: 10px;
     }
     /*about*/
     .grid-all{
@@ -453,6 +474,9 @@ body{
     }
     #meme_pic{
         max-width: 50vw;
+    }
+    .zoomed img {
+        margin-top: 35%;
     }
     /*contact*/
     .grid-contact{
