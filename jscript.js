@@ -61,6 +61,7 @@ window.addEventListener('scroll', function() {
 });
 
 // header mobile
+
 if (window.matchMedia("(max-width: 767px)").matches) {
     const header = document.querySelector('.head');
     const htmlToAdd = '<button class="toggle-button"><img src="./pics/menu.png" class="img_head"></button>';
